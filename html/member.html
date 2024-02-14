@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Management</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/media-query.css">
+</head>
+
+<body>
+
+    <div class="section card" id="memberSection">
+        <h2>Member Management</h2>
+
+        <form id="addMemberForm" class="hiddenForm">
+            <h3>Add New Member</h3>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="fullName">Member Name:</label>
+                        <input type="text" id="memberName" name="fullName" required>
+                    </td>
+                    <td>
+                        <label for="mobileNumber">Mobile Number:</label>
+                        <input type="tel" id="mobileNumber" name="mobileNumber" required>
+                    </td>
+                    <td>
+                        <label for="memberId">Member Id:</label>
+                        <input type="text" id="memberId" name="memberId" required>
+                    </td>
+                    <td>
+                        <button type="button" id="addMemberButton">Add Member</button>
+                    </td>
+                </tr>
+            </table>
+
+            <div id="response-statuscode"></div>
+
+            <script src="/js/add-members.js"></script>
+
+        </form>
+
+        <form id="viewMemberForm" class="hiddenForm">
+            <h3>View All Members List</h3>
+
+            <table>
+                <tr>
+                    <td>
+                        <button type="button" id="listMembersButton">List All Members</button>
+                    </td>
+                </tr>
+            </table>
+
+            <div id="response-statuscode"></div>
+
+            <script src="/js/view-members.js"></script>
+
+        </form>
+
+        <form id="deleteMemberForm" class="hiddenForm">
+            <h3>Delete Member</h3>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="deleteId">Member ID:</label>
+                        <input type="text" id="deleteId" required>
+                    </td>
+                    <td>
+                        <button type="button" id="deleteMemberButton">Delete Member</button>
+                    </td>
+                </tr>
+            </table>
+
+            <div id="response-statuscode"></div>
+            <script src="/js/delete-members.js"></script>
+
+        </form>
+
+        <form id="editMemberForm" class="hiddenForm">
+            <h3>Edit Member Details</h3>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="memberDocId">_id:</label>
+                        <input type="text" id="memberDocId" required>
+                    </td>
+                    <td>
+                        <label for="fullMemeberName">Full Name:</label>
+                        <input type="text" id="fullMemberName" required>
+                    </td>
+                    <td>
+                        <label for="memberMobileNumber">Mobile Number:</label>
+                        <input type="text" id="memberMobileNumber" required>
+                    </td>
+                    <td>
+                        <label for="editMemberId"> Member ID:</label>
+                        <input type="text" id="editMemberId" required>
+                    </td>
+                    
+                    <td>
+                        <button type="button" id="editMemberButton">Edit Member Details</button>
+                    </td>
+                </tr>
+            </table>
+            <div id="response-statuscode"></div>
+
+            <script src="/js/edit-member.js"></script>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    background-image: url('/image/Library.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed;
+
+}
+
+.header {
+    background-color: lavender;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;   
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    color:black;
+}
+
+.navbar a:hover {
+    background-color:slategrey;
+    color:darkred;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: lightcoral;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:flex-start;  
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px powderblue;
+    align-items: center;
+    font-size: 40px;
+    
+}
+
+p{
+    display: flex;
+    justify-content: center; 
+    font-size: large;
+    font-size: 25px;
+    
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#response-statuscode {
+    display: block;
+    color: green;
+    font-weight: bold;
+}

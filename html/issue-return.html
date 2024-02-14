@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Issuing and Returning</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/media-query.css">
+</head>
+<body>
+
+<div class="section card" id="issueReturnSection">
+    <h2>Book Issuing and Returning</h2>
+
+    
+
+    <form id="issueBookForm" class="hiddenForm">
+        <h3>Issue a Book</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="bookId">Book ID:</label>
+                    <input type="text" id="bookId" required>
+                </td>
+                <td>
+                    <label for="memberId">Member ID:</label>
+                    <input type="text" id="memberId" required>
+                </td>
+                <td>
+                    <label for="issueId">Issue ID:</label>
+                    <input type="text" id="issueId" required>
+                </td>
+                <td>
+                    <label for="duration">Issue Duration:</label>
+                    <input type="text" id="duration" required>
+                </td>
+                <td>
+                    <button type="button" id="issueBookButton">Issue a Book</button>
+                </td>
+            </tr>
+        </table>
+        <div id="response-statuscode"></div>
+
+        <script src="/js/issue-books.js"></script>
+
+    </form>
+
+    <form id="returnBookForm" class="hiddenForm">
+        <h3>Return Book</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="issuedId">Issue ID:</label>
+                    <input type="text" id="issuedId" required>
+                </td>
+                <td>
+                    <button type="button" id="returnBookButton">Return a Book</button>
+                </td>
+            </tr>
+        </table>
+
+        <div id="response-statuscode"></div>
+
+        <script src="/js/return-books.js"></script>
+    </form>
+
+    
+</div>
+
+</body>
+</html>

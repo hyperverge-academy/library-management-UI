@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/media-query.css">
+</head>
+<body>
+
+<div class="section card" id="bookSection">
+    <h2>Book Management</h2>
+
+    <form id="addBookForm" class="hiddenForm">
+        <h3>Add New Book</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="bookId">Book Id:</label>
+                    <input type="text" id="bookId" required>
+                </td>
+                <td>
+                    <label for="bookTitle">Book Title:</label>
+                    <input type="text" id="bookTitle" required>
+                </td>
+                <td>
+                    <label for="bookStatus">Book Status:</label>
+                    <input type="text" id="bookStatus" required>
+                </td>
+                <td>
+                    <label for="bookAuthor">Book Author:</label>
+                    <input type="text" id="bookAuthor" required>
+                </td>
+                <td>
+                    <label for="bookGenre">Book Genre:</label>
+                    <input type="text" id="bookGenre" required>
+                </td>
+                <td>
+                    <label for="bookPrice">Book Price:</label>
+                    <input type="text" id="bookPrice" required>
+                </td>
+                <td>
+                    <button type="button" id="addBookButton">Add Book</button>    
+                </td>
+            </tr>
+        </table>
+
+        <div id="response-statuscode"></div>
+
+        <script src="/js/add-books.js"></script>
+
+    </form>
+
+    <form id="viewBookForm" class="hiddenForm">
+        <h3>View All Books List</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <button type="button" id="listBookButton">List All Books</button>
+                </td>
+            </tr>
+        </table>
+
+        <div id="response-statuscode"></div>
+        <script src="/js/view-books.js"></script>
+
+    </form>
+
+    <form id="deleteBookForm" class="hiddenForm">
+        <h3>Delete Book</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="bookId">Book ID:</label>
+                    <input type="text" id="deleteBookId" required>
+                </td>
+                <td>
+                    <button type="button" id="deleteBookButton">Delete Book</button>
+                </td>
+            </tr>
+        </table>
+        <div id="response-statuscode"></div>
+        <script src="/js/delete-books.js"></script>
+    </form>
+
+    <form id="editBookForm" class="hiddenForm">
+        <h3>Edit Book Details</h3>
+    
+        <table>
+            <tr>
+                
+                <td>
+                    <label for="bookDocId">ID:</label>
+                    <input type="text" id="bookDocId" required>
+                </td>
+                <td>
+                    <label for="bookId">Book ID:</label>
+                    <input type="text" id="bookId" required>
+                </td>
+                <td>
+                    <label for="bookTitle">Book Title:</label>
+                    <input type="text" id="bookTitle" required>
+                </td>
+                <td>
+                    <label for="bookGenre">Book Genre:</label>
+                    <input type="text" id="bookGenre" required>
+                </td>
+                <td>
+                    <label for="bookPrice">Book Price:</label>
+                    <input type="text" id="bookPrice" required>
+                </td>
+                <td>
+                    <button type="button" id="editBookButton">Edit Book Details</button>
+                </td>
+            </tr>
+        </table>
+    
+        <div id="response-statuscode"></div>
+        <script src="/js/edit-books.js"></script>
+    </form>
+    
+   
+</div>
+
+</body>
+</html>
